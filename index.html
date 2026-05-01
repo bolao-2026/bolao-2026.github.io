@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bolão 2026</title>
+
+  <!-- Fonte estilo DS-Digital -->
+  <style>
+    @font-face {
+      font-family: 'DS-Digital';
+      src: url('https://cdn.jsdelivr.net/gh/keshikan/DSEG/fonts/DSEG7Classic-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+
   <style>
     body {
       margin: 0;
@@ -63,10 +74,12 @@
     }
 
     .countdown {
-      font-size: 2.5rem;
-      font-weight: bold;
+      font-family: 'DS-Digital', monospace;
+      font-size: 2.8rem;
       color: #22c55e;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
+      font-variant-numeric: tabular-nums;
+      text-shadow: 0 0 8px #22c55e, 0 0 16px #22c55e;
     }
 
     /* MOBILE */
@@ -89,7 +102,7 @@
       }
 
       .countdown {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       .flags {
@@ -115,7 +128,6 @@
     <h1>Bolão Copa 2026</h1>
 
     <div class="countdown-box">
-      <div class="countdown-title">Copa começa em</div>
       <div class="countdown" id="countdown"></div>
     </div>
 
